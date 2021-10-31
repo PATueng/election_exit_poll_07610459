@@ -1,3 +1,4 @@
+import 'package:election_exit_poll_07610459/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +25,13 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      routes: {
+        //LoginPage.routeName: (context) => const LoginPage(),
+        HomePage.routeName: (context) => const HomePage(),
+        //FoodListPage.routeName: (context) => const FoodListPage(),
+        //FoodDetailsPage.routeName: (context) => const FoodDetailsPage(),
+      },
+      initialRoute: HomePage.routeName,
     );
   }
 }
